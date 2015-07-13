@@ -1,0 +1,1 @@
+/Users/liying/NTEpubReader/Build/Intermediates/ArchiveIntermediates/NTEpubReader/InstallationBuildProductsLocation/Applications/NTEpubReader.app
