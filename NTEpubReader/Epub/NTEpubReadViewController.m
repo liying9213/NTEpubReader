@@ -314,12 +314,12 @@
         return;
     }
     CGPoint ipoint = point;
-    if (ipoint.x<100)
+    if (ipoint.x<ScreenWidth/3)
     {
         [self JumpToBeforeView];
         [self hiddenToolBar];
     }
-    else if(ipoint.x>220)
+    else if(ipoint.x>ScreenWidth/3*2)
     {
         [self JumpToAfterView];
         [self hiddenToolBar];

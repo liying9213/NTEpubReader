@@ -8,12 +8,84 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Is0mwPnxfQOIm9C5tKWypTHvYhg=
+			M4yBpGw0rnrNXJrzqlBnurHecVc=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/Info.plist</key>
+		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc~ipad.nib/objects-8.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XHLKKbLZiwwdyMTz6soObo20RyY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc~ipad.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wgNqSaBd09ivg426E+i+/TMfWBU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc~iphone.nib/objects-8.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			e12v+zFAeZWiR2CFez2ogJcbZFA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc~iphone.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WP95No8oGh50vnx0DqgDRR0rwlw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS~ipad.nib/objects-8.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TSv98lO06VFvMjzql93iXgV3x7Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS~ipad.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wHi5EERvZNiFr70xBTMwkIJuR1I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS~iphone.nib/objects-8.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pBZb/lufeESwt9KWo2nQBny06f0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS~iphone.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UMmuwWJ57H5lfZykn+dx79ktuII=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main~ipad.storyboardc/Info-8.0+.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -22,20 +94,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc.nib</key>
+		<key>Base.lproj/Main~ipad.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5XNkuCgl1/3B0+F1QaBApPfQmEQ=
+			Jmu6F/QDeWUyQljt5m/23hAkmcs=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS.nib</key>
+		<key>Base.lproj/Main~iphone.storyboardc/Info-8.0+.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Qf/NcDg2EqFlMQHx1S/AJCnefxs=
+			Jmu6F/QDeWUyQljt5m/23hAkmcs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main~iphone.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Jmu6F/QDeWUyQljt5m/23hAkmcs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -50,7 +131,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QhzisXOetXWCAA1LqSDod9DEFds=
+		5n/O1g6inbxLmvKj1fF979zCEmc=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -126,7 +207,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		MaBqUIL6k1QiOyGP9v+VzysBIkA=
+		Yr2jHAVbKASQl4z5YRN3hYjRdLU=
 		</data>
 		<key>fangsong.ttf</key>
 		<data>
@@ -195,12 +276,84 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Is0mwPnxfQOIm9C5tKWypTHvYhg=
+			M4yBpGw0rnrNXJrzqlBnurHecVc=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/Info.plist</key>
+		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc~ipad.nib/objects-8.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XHLKKbLZiwwdyMTz6soObo20RyY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc~ipad.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wgNqSaBd09ivg426E+i+/TMfWBU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc~iphone.nib/objects-8.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			e12v+zFAeZWiR2CFez2ogJcbZFA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc~iphone.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WP95No8oGh50vnx0DqgDRR0rwlw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS~ipad.nib/objects-8.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TSv98lO06VFvMjzql93iXgV3x7Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS~ipad.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wHi5EERvZNiFr70xBTMwkIJuR1I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS~iphone.nib/objects-8.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pBZb/lufeESwt9KWo2nQBny06f0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS~iphone.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UMmuwWJ57H5lfZykn+dx79ktuII=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main~ipad.storyboardc/Info-8.0+.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -209,20 +362,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc.nib</key>
+		<key>Base.lproj/Main~ipad.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5XNkuCgl1/3B0+F1QaBApPfQmEQ=
+			Jmu6F/QDeWUyQljt5m/23hAkmcs=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS.nib</key>
+		<key>Base.lproj/Main~iphone.storyboardc/Info-8.0+.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Qf/NcDg2EqFlMQHx1S/AJCnefxs=
+			Jmu6F/QDeWUyQljt5m/23hAkmcs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main~iphone.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Jmu6F/QDeWUyQljt5m/23hAkmcs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -305,7 +467,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		MaBqUIL6k1QiOyGP9v+VzysBIkA=
+		Yr2jHAVbKASQl4z5YRN3hYjRdLU=
 		</data>
 		<key>fangsong.ttf</key>
 		<data>
