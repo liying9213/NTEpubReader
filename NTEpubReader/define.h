@@ -23,6 +23,5 @@
 #define NavBarCol [UIColor colorWithHexString:NavigationBarColor]
 #define DESC_FONT_COLOR [UIColor colorWithHexString:@"#333333"]
 #define getSMS @"fdb17e"
-#define AES_KEY @"xingshulin.com.!#%@)@*^!^*" //密钥
 #define DOCUMENT_PATH [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 #endif
