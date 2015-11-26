@@ -8,7 +8,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M4yBpGw0rnrNXJrzqlBnurHecVc=
+			UBSFwm9Rm028RKbDbe2gBL3FruE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -17,16 +17,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XHLKKbLZiwwdyMTz6soObo20RyY=
+			FNA0QFoWkVoazkAYcUPiSuhIH3Y=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc~ipad.nib/runtime.nib</key>
+		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc~ipad.nib/objects.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wgNqSaBd09ivg426E+i+/TMfWBU=
+			kMZMlzgNxvKiIfRGBHrSSdguo7s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -35,16 +35,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e12v+zFAeZWiR2CFez2ogJcbZFA=
+			RD63Kq1QsV7R+19RAjWw3VpREGQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc~iphone.nib/runtime.nib</key>
+		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc~iphone.nib/objects.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WP95No8oGh50vnx0DqgDRR0rwlw=
+			ERcG5Zmdm+TWjrLYAHrVYvsAGu0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -53,16 +53,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TSv98lO06VFvMjzql93iXgV3x7Y=
+			j7zh06TheAcChr6Zo1Ow9h6PAJA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS~ipad.nib/runtime.nib</key>
+		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS~ipad.nib/objects.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wHi5EERvZNiFr70xBTMwkIJuR1I=
+			IQXxyCNUWxwQQUouKRVlUIfpPu4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -71,16 +71,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pBZb/lufeESwt9KWo2nQBny06f0=
+			GAeLIgn8A5DwZR8JAZv60zxIxA0=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS~iphone.nib/runtime.nib</key>
+		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS~iphone.nib/objects.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UMmuwWJ57H5lfZykn+dx79ktuII=
+			29p9Qy2VHdlmoUzlXHPOGKkD7qw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -121,6 +121,10 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Fangsong.ttf</key>
+		<data>
+		5yMC/Mng+/2dGYllDRLchvW7UGY=
+		</data>
 		<key>HanaMinA.ttf</key>
 		<data>
 		9qYI+1xN0iGpN/JjarENL+ElvxI=
@@ -131,7 +135,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5n/O1g6inbxLmvKj1fF979zCEmc=
+		waCa/cRn7Ma5GEaggrjaNktVgqM=
+		</data>
+		<key>NotoSansCJKsc-Bold.otf</key>
+		<data>
+		k0/+FgeBORJAFt0Ikv9/ui/Q9sQ=
+		</data>
+		<key>NotoSansCJKsc-DemiLight.otf</key>
+		<data>
+		Gsgd5UgZCLGpQD7YA3NLLRviQxE=
+		</data>
+		<key>NotoSansCJKsc-Light.otf</key>
+		<data>
+		mQ03or7y7VTVi72Pt1VcRIOWhiU=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -207,11 +223,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		Yr2jHAVbKASQl4z5YRN3hYjRdLU=
-		</data>
-		<key>fangsong.ttf</key>
-		<data>
-		m/6NtpRums+ZB8JuJ4Ora+bYXDU=
+		8PepyjHZSOxGrGdQBdzMlKKV9IU=
 		</data>
 		<key>icon_delete_black.png</key>
 		<data>
@@ -269,6 +281,10 @@
 		<data>
 		bliLPg3KL6oTnYa60qxTDtGWvpk=
 		</data>
+		<key>华文仿宋.ttf</key>
+		<data>
+		zqtmvxIOeihGc1JkPeQX1p97QOE=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -276,7 +292,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M4yBpGw0rnrNXJrzqlBnurHecVc=
+			UBSFwm9Rm028RKbDbe2gBL3FruE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -285,16 +301,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XHLKKbLZiwwdyMTz6soObo20RyY=
+			FNA0QFoWkVoazkAYcUPiSuhIH3Y=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc~ipad.nib/runtime.nib</key>
+		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc~ipad.nib/objects.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wgNqSaBd09ivg426E+i+/TMfWBU=
+			kMZMlzgNxvKiIfRGBHrSSdguo7s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -303,16 +319,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e12v+zFAeZWiR2CFez2ogJcbZFA=
+			RD63Kq1QsV7R+19RAjWw3VpREGQ=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc~iphone.nib/runtime.nib</key>
+		<key>Base.lproj/Main.storyboardc/UIViewController-vXZ-lx-hvc~iphone.nib/objects.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WP95No8oGh50vnx0DqgDRR0rwlw=
+			ERcG5Zmdm+TWjrLYAHrVYvsAGu0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -321,16 +337,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TSv98lO06VFvMjzql93iXgV3x7Y=
+			j7zh06TheAcChr6Zo1Ow9h6PAJA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS~ipad.nib/runtime.nib</key>
+		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS~ipad.nib/objects.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wHi5EERvZNiFr70xBTMwkIJuR1I=
+			IQXxyCNUWxwQQUouKRVlUIfpPu4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -339,16 +355,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pBZb/lufeESwt9KWo2nQBny06f0=
+			GAeLIgn8A5DwZR8JAZv60zxIxA0=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS~iphone.nib/runtime.nib</key>
+		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS~iphone.nib/objects.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UMmuwWJ57H5lfZykn+dx79ktuII=
+			29p9Qy2VHdlmoUzlXHPOGKkD7qw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -389,6 +405,10 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Fangsong.ttf</key>
+		<data>
+		5yMC/Mng+/2dGYllDRLchvW7UGY=
+		</data>
 		<key>HanaMinA.ttf</key>
 		<data>
 		9qYI+1xN0iGpN/JjarENL+ElvxI=
@@ -396,6 +416,18 @@
 		<key>HanaMinB.ttf</key>
 		<data>
 		uEYfCDKuVowFgj6E0v4vcVprG4U=
+		</data>
+		<key>NotoSansCJKsc-Bold.otf</key>
+		<data>
+		k0/+FgeBORJAFt0Ikv9/ui/Q9sQ=
+		</data>
+		<key>NotoSansCJKsc-DemiLight.otf</key>
+		<data>
+		Gsgd5UgZCLGpQD7YA3NLLRviQxE=
+		</data>
+		<key>NotoSansCJKsc-Light.otf</key>
+		<data>
+		mQ03or7y7VTVi72Pt1VcRIOWhiU=
 		</data>
 		<key>bg.png</key>
 		<data>
@@ -467,11 +499,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		Yr2jHAVbKASQl4z5YRN3hYjRdLU=
-		</data>
-		<key>fangsong.ttf</key>
-		<data>
-		m/6NtpRums+ZB8JuJ4Ora+bYXDU=
+		8PepyjHZSOxGrGdQBdzMlKKV9IU=
 		</data>
 		<key>icon_delete_black.png</key>
 		<data>
@@ -528,6 +556,10 @@
 		<key>tingheib.ttf</key>
 		<data>
 		bliLPg3KL6oTnYa60qxTDtGWvpk=
+		</data>
+		<key>华文仿宋.ttf</key>
+		<data>
+		zqtmvxIOeihGc1JkPeQX1p97QOE=
 		</data>
 	</dict>
 	<key>rules</key>

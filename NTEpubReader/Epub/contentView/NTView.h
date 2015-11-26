@@ -33,6 +33,10 @@
     id NCTFrame;
     BOOL isurl;
     CGPoint touchPoint;
+    CGContextRef context;
+    CGRect selectRect;
+    CGRect beginRect;
+    BOOL isLongSelect;
 }
 
 @property (nonatomic,strong)NSMutableArray *imageAry;

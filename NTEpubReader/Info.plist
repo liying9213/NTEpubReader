@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>epub审核Pad</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -22,6 +24,18 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>tingheib.ttf</string>
+		<string>tinghei.ttf</string>
+		<string>Fangsong.ttf</string>
+		<string>HanaMinA.ttf</string>
+		<string>HanaMinB.ttf</string>
+		<string>NotoSansCJKsc-Light.otf</string>
+		<string>NotoSansCJKsc-Bold.otf</string>
+		<string>NotoSansCJKsc-DemiLight.otf</string>
+		<string>华文仿宋.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -34,15 +48,5 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>tingheib.ttf</string>
-		<string>tinghei.ttf</string>
-		<string>fangsong.ttf</string>
-		<string>HanaMinA.ttf</string>
-		<string>HanaMinB.ttf</string>
-	</array>
-	<key>CFBundleDisplayName</key>
-	<string>epub审核</string>
 </dict>
 </plist>

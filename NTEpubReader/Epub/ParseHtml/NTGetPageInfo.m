@@ -461,7 +461,7 @@ static CGFloat widthCallback( void* ref )
     [self writeHtmlInfoWith:attString withName:name];
     _imageArray=[[NSMutableArray  alloc] init];
     _CatalogArray=Parser.CatalogArray;
-//    [_testAry addObjectsFromArray:Parser.testAry];
+    [_testAry addObjectsFromArray:Parser.testAry];
     CGRect rect=_NTframe;
     rect.size.width-=22;
     [self getPageInfoWith:attString withHtml:name withframe:rect];

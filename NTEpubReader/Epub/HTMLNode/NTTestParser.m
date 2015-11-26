@@ -54,7 +54,7 @@
     HTMLParser *parser = [[HTMLParser alloc] initWithString:html error:&error];
     _CatalogArray=[[NSMutableArray alloc] init];
     _pointDic=[[NSMutableDictionary alloc] init];
-//    _testAry=[[NSMutableArray alloc] init];
+    _testAry=[[NSMutableArray alloc] init];
     if (error) {
 //        NSLog(@"Error: %@", error);
         return nil;
@@ -65,7 +65,7 @@
         {
             if (!(node.className&&[node.className isEqualToString:@"singlepage"]))
             {
-//                [_testAry addObject:node.rawContents];
+                [_testAry addObject:node.rawContents];
                 [_CatalogArray addObject:[NSNumber numberWithUnsignedInteger:([attributedString length]-imageLength)]];
                 if (node.children&&node.children.count>2)
                 {
@@ -110,7 +110,7 @@
         }
         else if([node.tagName isEqualToString:@"h2"])
         {
-//            [_testAry addObject:node.rawContents];
+            [_testAry addObject:node.rawContents];
             [_CatalogArray addObject:[NSNumber numberWithUnsignedInteger:([attributedString length]-imageLength)]];
             if (node.children&&node.children.count>2)
             {
@@ -153,7 +153,7 @@
         }
         else if([node.tagName isEqualToString:@"h3"])
         {
-//            [_testAry addObject:node.rawContents];
+            [_testAry addObject:node.rawContents];
             [_CatalogArray addObject:[NSNumber numberWithUnsignedInteger:([attributedString length]-imageLength)]];
             if (node.children&&node.children.count>2)
             {
@@ -252,7 +252,7 @@
         }
         else if ([node.className isEqualToString:@"singlepage"])
         {
-//            [_testAry addObject:node.rawContents];
+            [_testAry addObject:node.rawContents];
             NSAttributedString *string=[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"<img src=\"%@\"/>",[[node.children firstObject] getAttributeNamed:@"src"]]];
             NSMutableAttributedString *iattributedString=[[NSMutableAttributedString alloc] initWithAttributedString:string];
             [_CatalogArray addObject:[NSNumber numberWithInt:0]];
@@ -482,6 +482,7 @@
 -(UIFont*)customFontWithsize:(CGFloat)size withFontName:(NSString *)fontName
 {
     if (!fontName) {
+//        fontName=@"NotoSansCJKsc-DemiLight";
         fontName=@"FZLanTingHei-R-GB18030";
     }
     float isize;
@@ -493,6 +494,7 @@
 -(UIFont*)customBoldFontWithsize:(CGFloat)size withFontName:(NSString *)fontName
 {
     if (!fontName) {
+//        fontName=@"NotoSansCJKsc-Bold";
         fontName=@"FZLanTingHei-B_GB18030";
     }
     float isize;

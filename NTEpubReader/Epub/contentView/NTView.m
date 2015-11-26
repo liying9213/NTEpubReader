@@ -16,6 +16,10 @@
     if (self) {
         self.backgroundColor=[UIColor clearColor];
         _NTImageAry=[[NSMutableArray array] init];
+        selectRect=CGRectZero;
+        UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
+        [self addGestureRecognizer:longPress];
+        longPress.minimumPressDuration = 1.0;
     }
     return self;
 }
@@ -27,7 +31,7 @@
 
 - (void)drawRect:(CGRect)rect
 {
-    CGContextRef context = UIGraphicsGetCurrentContext();
+    context = UIGraphicsGetCurrentContext();
     CGContextSetTextMatrix(context, CGAffineTransformIdentity);
     CGContextTranslateCTM(context, 0, self.bounds.size.height);
     CGContextScaleCTM(context, 1.0, -1.0);
@@ -110,6 +114,7 @@
         
         free(lineOrigins);
     }
+    [self drawSelectRect:selectRect];
 }
 
 - (UIImage *)reSizeImage:(UIImage *)image toSize:(CGSize)reSize
@@ -123,58 +128,109 @@
     
 }
 
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+-(void) longPress:(UILongPressGestureRecognizer*) longPress
 {
+    isLongSelect=YES;
+    NSString *footnote=[self dataForPoint:touchPoint];
+    beginRect=selectRect;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self setNeedsDisplay];
+    });
+    footnote=nil;
+}
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *touch = [touches anyObject];
     //获取触摸点击当前view的坐标位置
     CGPoint location = [touch locationInView:self];
-    float reverseY=self.frame.size.height-location.y;
-    BOOL ishaveImage=NO;
-    isurl=NO;
     touchPoint=location;
+    NSLog(@"B===%f===%f---%f---%f",location.x,location.y,CGRectGetMinY(selectRect),CGRectGetHeight(selectRect));
+}
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    UITouch *touch = [touches anyObject];
+    //获取触摸点击当前view的坐标位置
+    
+    CGPoint location = [touch locationInView:self];
+//    CGRect beginRect=selectRect;
     NSString *footnote=[self dataForPoint:location];
-    if (footnote)
-    {
-        if (isurl) {
-            [_delegate TouchUpForSelectURL:footnote];
+    selectRect.size.height=fabs (CGRectGetMinY(selectRect)-CGRectGetMinY(beginRect))+CGRectGetHeight(selectRect)+5;
+    selectRect.size.width=CGRectGetWidth(beginRect);
+//    selectRect.origin.y=CGRectGetMinY(beginRect)+selectRect.size.height;
+     NSLog(@"M===%f===%f---%f---%f",location.x,location.y,CGRectGetMinY(selectRect),CGRectGetHeight(selectRect));
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self setNeedsDisplay];
+    });
+    footnote=nil;
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    if (isLongSelect) {
+//        UITouch *touch = [touches anyObject];
+//        //获取触摸点击当前view的坐标位置
+//        CGPoint location = [touch locationInView:self];
+////        float reverseY=self.frame.size.height-location.y;
+////        BOOL ishaveImage=NO;
+//        isurl=NO;
+//        touchPoint=location;
+//        NSString *footnote=[self dataForPoint:location];
+//        beginRect=selectRect;
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            [self setNeedsDisplay];
+//        });
+//        footnote=nil;
+    }
+    else{
+        UITouch *touch = [touches anyObject];
+        //获取触摸点击当前view的坐标位置
+        CGPoint location = [touch locationInView:self];
+        float reverseY=self.frame.size.height-location.y;
+        BOOL ishaveImage=NO;
+        isurl=NO;
+        touchPoint=location;
+        NSString *footnote=[self dataForPoint:location];
+        if (footnote)
+        {
+            if (isurl) {
+                [_delegate TouchUpForSelectURL:footnote];
+                return;
+            }
+            [_delegate TouchUpForSelectFootNote:footnote withHtml:_currentName withPoint:touchPoint];
             return;
         }
-        [_delegate TouchUpForSelectFootNote:footnote withHtml:_currentName withPoint:touchPoint];
-        return;
-    }
-    
-    if (_imageAry&&_imageAry.count>0)
-    {
-        int i=0;
-        for (NSDictionary *dic in _imageAry)
+        
+        if (_imageAry&&_imageAry.count>0)
         {
-            float imageY=[[dic objectForKey:@"imageY"] floatValue];
-            float imageHeight=[[dic objectForKey:@"imageHeight"] floatValue];
-            float imageWidth=[[dic objectForKey:@"imageWidth"] floatValue];
-            BOOL PageImage=[[dic objectForKey:@"PageImage"] floatValue];
-            BOOL inLineImage=[[dic objectForKey:@"inLineImage"] boolValue];
-            if (reverseY>imageY&&reverseY<imageHeight+imageY&&!PageImage&&imageWidth+22>=location.x&&!inLineImage)
+            int i=0;
+            for (NSDictionary *dic in _imageAry)
             {
-                ishaveImage=YES;
-                double value=self.frame.size.height-imageY-imageHeight;
-                double integer;
-                modf(value,&integer);
-                
-               double ivalue= round(value*100)/100;
-
-                [_delegate TouchUpForImage:[dic objectForKey:@"imageName"] withYValue:(ivalue+50) WithImage:[_NTImageAry objectAtIndex:i]];
-                break;
+                float imageY=[[dic objectForKey:@"imageY"] floatValue];
+                float imageHeight=[[dic objectForKey:@"imageHeight"] floatValue];
+                float imageWidth=[[dic objectForKey:@"imageWidth"] floatValue];
+                BOOL PageImage=[[dic objectForKey:@"PageImage"] floatValue];
+                BOOL inLineImage=[[dic objectForKey:@"inLineImage"] boolValue];
+                if (reverseY>imageY&&reverseY<imageHeight+imageY&&!PageImage&&imageWidth+22>=location.x&&!inLineImage)
+                {
+                    ishaveImage=YES;
+                    double value=self.frame.size.height-imageY-imageHeight;
+                    double integer;
+                    modf(value,&integer);
+                    
+                    double ivalue= round(value*100)/100;
+                    
+                    [_delegate TouchUpForImage:[dic objectForKey:@"imageName"] withYValue:(ivalue+50) WithImage:[_NTImageAry objectAtIndex:i]];
+                    break;
+                }
+                i++;
             }
-            i++;
+            if (!ishaveImage)
+            {
+                [_delegate TouchUpForSelect:location];
+            }
         }
-        if (!ishaveImage)
+        else
         {
             [_delegate TouchUpForSelect:location];
         }
-    }
-    else
-    {
-        [_delegate TouchUpForSelect:location];
     }
 }
 
@@ -226,11 +282,60 @@
                         return url;
                     }
                 }
+                selectRect=lineFrame;
             }
         }
     }
-    
     return nil;
+}
+
+- (void)getRectForPoint:(CGPoint)point
+{
+    NSArray *lines = (NSArray *)CTFrameGetLines((CTFrameRef)NCTFrame);
+    NSInteger lineCount = [lines count];
+    CGPoint origins[lineCount];
+    if (lineCount != 0) {
+        CTFrameGetLineOrigins((CTFrameRef)NCTFrame, CFRangeMake(0, 0), origins);
+        for (int i = 0; i < lineCount; i++)
+        {
+            CGPoint baselineOrigin = origins[i];
+            //the view is inverted, the y origin of the baseline is upside down
+            baselineOrigin.y = CGRectGetHeight(self.frame) - baselineOrigin.y;
+            
+            CTLineRef line = (__bridge CTLineRef)[lines objectAtIndex:i];
+            CGFloat ascent, descent;
+            CGFloat lineWidth = CTLineGetTypographicBounds(line, &ascent, &descent, NULL);
+            
+            CGRect lineFrame = CGRectMake(baselineOrigin.x, baselineOrigin.y - ascent, lineWidth, ascent + descent);
+            if (CGRectContainsPoint(lineFrame, point))
+            {
+                CFIndex index = CTLineGetStringIndexForPosition(line, point);
+                CFArrayRef runs = CTLineGetGlyphRuns(line);
+                CGFloat width = 0.0;
+                for(CFIndex j = 0; j < CFArrayGetCount(runs); j++)
+                {
+                    CTRunRef run = CFArrayGetValueAtIndex(runs, j);
+                }
+                selectRect=lineFrame;
+            }
+        }
+    }
+}
+
+- (void) drawSelectRect:(CGRect)rect{
+    if (!CGRectGetWidth(rect)>0) {
+        return;
+    }
+    rect.origin.y=CGRectGetHeight(self.frame)-CGRectGetMidY(rect)-8;
+    rect.size.height+=4;
+    UIColor *color=[UIColor colorWithRed:0.7 green:0.3 blue:0.5 alpha:0.3];
+    CGContextSetLineWidth(context, 0.0);
+    CGContextSetStrokeColorWithColor(context, color.CGColor);
+    CGRect rectangle =rect;
+    CGContextAddRect(context, rectangle);
+    CGContextStrokePath(context);
+    CGContextSetFillColorWithColor(context, color.CGColor);
+    CGContextFillRect(context, rectangle);
 }
 
 -(void)dealloc
